@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",                           // Use latest ECMAScript version for output
+    "useDefineForClassFields": true,              // Enable class fields
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],     // Include DOM, DOM.Iterable, and ESNext libraries
+    "allowJs": false,                             // Disallow JavaScript files (set to true if you want to include JS files)
+    "skipLibCheck": true,                         // Skip checking library files
+    "esModuleInterop": true,                      // Enable ES module interoperability
+    "allowSyntheticDefaultImports": true,         // Allow default imports from modules with no default export
+    "strict": true,                               // Enable all strict type-checking options
+    "forceConsistentCasingInFileNames": true,     // Ensure consistent casing in file imports
+    "module": "ESNext",                           // Use ESNext modules, suitable for Vite
+    "moduleResolution": "Node",                   // Use Node's module resolution
+    "resolveJsonModule": true,                    // Enable importing JSON files as modules
+    "isolatedModules": true,                      // Ensure each file is treated as a module
+    "noEmit": true,                               // Prevent emitting any compiled output (handled by Vite)
+    "jsx": "react-jsx",                           // Use new JSX transform, recommended for React 17+
+    "types": ["vite/client"],                     // Include Vite's client types
+    "baseUrl": ".",                               // Set the base URL for module resolution
+    "paths": {                                    // Define paths for module imports if needed
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src"],                             // Include all TypeScript and JSX/TSX files in the src folder
+  "exclude": ["node_modules", "dist"]             // Exclude node_modules and dist folders
+}
